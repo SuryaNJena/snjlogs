@@ -1,0 +1,35 @@
+baseURL = '/'
+title = 'SNJ Logs'
+languageCode = 'en-in'
+theme = 're-terminal'
+
+[params]
+  [params.Author]
+    name = "SNJ"
+    email = "snj@example.com"
+  contentTypeName = "posts"
+  themeColor = "blue"
+  showMenuItems = 2
+  fullWidthTheme = false
+  centerTheme = true
+  readingTime = true
+
+[languages]
+  [languages.en.params]
+    title = "SNJ Logs"
+    subtitle = "Technical Logs and Thoughts"
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "SNJ Logs"
+      logoHomeLink = "/"
+
+[languages.en.menu]
+  [[languages.en.menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
