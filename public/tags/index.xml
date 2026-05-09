@@ -6,7 +6,28 @@
     <description>Recent content in Tags on SNJ Logs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-in</language>
-    <managingEditor>snj@example.com (SNJ)</managingEditor>
-    <webMaster>snj@example.com (SNJ)</webMaster><atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>suryanj@proton.me (SNJ)</managingEditor>
+    <webMaster>suryanj@proton.me (SNJ)</webMaster>
+    <lastBuildDate>Sat, 09 May 2026 09:52:39 +0530</lastBuildDate><atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logging</title>
+      <link>//localhost:1313/tags/logging/</link>
+      <pubDate>Sat, 09 May 2026 09:52:39 +0530</pubDate>
+      <author>suryanj@proton.me (SNJ)</author>
+      <guid>//localhost:1313/tags/logging/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Self-Hosting</title>
+      <link>//localhost:1313/tags/self-hosting/</link>
+      <pubDate>Sat, 09 May 2026 09:52:39 +0530</pubDate>
+      <author>suryanj@proton.me (SNJ)</author>
+      <guid>//localhost:1313/tags/self-hosting/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
   </channel>
 </rss>

@@ -6,9 +6,8 @@ theme = 're-terminal'
 [params]
   [params.Author]
     name = "SNJ"
-    email = "snj@example.com"
-  contentTypeName = "posts"
-  themeColor = "blue"
+    email = "suryanj@proton.me"
+  contentTypeName = "logs"
   showMenuItems = 2
   fullWidthTheme = false
   centerTheme = true
@@ -16,13 +15,17 @@ theme = 're-terminal'
 
 [languages]
   [languages.en.params]
+    favicon = "favicon.ico"
+    ThemeColor = "blue"
     title = "SNJ Logs"
     subtitle = "Technical Logs and Thoughts"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
     readMore = "Read more"
-    readOtherPosts = "Read other posts"
+    readOtherPosts = "Read other logs"
+    newerPosts = "Newer logs"
+    olderPosts = "Older logs"
 
     [languages.en.params.logo]
       logoText = "SNJ Logs"
@@ -31,5 +34,9 @@ theme = 're-terminal'
 [languages.en.menu]
   [[languages.en.menu.main]]
     identifier = "posts"
-    name = "Posts"
-    url = "/posts"
+    name = "Logs"
+    url = "/logs"
+
+[params.isso]
+  url = "http://localhost:1212" # Change this to your Isso server URL
+  css = true
