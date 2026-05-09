@@ -1,0 +1,42 @@
+baseURL = '/'
+title = 'SNJ Logs'
+languageCode = 'en-in'
+theme = 're-terminal'
+
+[params]
+  [params.Author]
+    name = "SNJ"
+    email = "suryanj@proton.me"
+  contentTypeName = "logs"
+  showMenuItems = 2
+  fullWidthTheme = false
+  centerTheme = true
+  readingTime = true
+
+[languages]
+  [languages.en.params]
+    favicon = "favicon.ico"
+    ThemeColor = "blue"
+    title = "SNJ Logs"
+    subtitle = "Technical Logs and Thoughts"
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other logs"
+    newerPosts = "Newer logs"
+    olderPosts = "Older logs"
+
+    [languages.en.params.logo]
+      logoText = "SNJ Logs"
+      logoHomeLink = "/"
+
+[languages.en.menu]
+  [[languages.en.menu.main]]
+    identifier = "posts"
+    name = "Logs"
+    url = "/logs"
+
+[params.isso]
+  url = "http://localhost:1212" # Change this to your Isso server URL
+  css = true

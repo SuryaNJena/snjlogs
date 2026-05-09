@@ -1,0 +1,102 @@
+{{ if not .Params.hideComments }}
+<div id="comments">
+    <section id="isso-thread" 
+             data-isso-id="{{ .RelPermalink }}" 
+             data-isso-title="{{ .Title }}"></section>
+    <script data-isso="{{ site.Params.isso.url | default "http://localhost:1212" }}"
+            data-isso-css="{{ site.Params.isso.css | default "true" }}"
+            src="{{ site.Params.isso.url | default "http://localhost:1212" }}/js/embed.min.js"></script>
+    
+    <style>
+        #isso-thread {
+            background: transparent;
+            color: var(--color);
+            padding: 20px 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+            font-family: 'Fira Code', monospace;
+        }
+
+        /* Isso Header */
+        #isso-thread .isso-thread-title {
+            color: var(--accent);
+            font-family: inherit;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Postbox & Preview */
+        #isso-thread .isso-postbox {
+            margin-bottom: 30px;
+        }
+
+        #isso-thread .isso-postbox .isso-textarea,
+        #isso-thread .isso-postbox .isso-input-wrapper input,
+        #isso-thread .isso-postbox .isso-preview {
+            background: var(--background) !important;
+            border: 2px solid var(--accent) !important;
+            color: var(--color) !important;
+            font-family: 'Fira Code', monospace !important;
+            padding: 10px !important;
+            margin-bottom: 10px;
+            box-shadow: none !important;
+        }
+
+        #isso-thread .isso-postbox .isso-preview {
+            border-style: dotted !important;
+            opacity: 0.8;
+        }
+
+        #isso-thread .isso-postbox .isso-textarea:focus,
+        #isso-thread .isso-postbox .isso-input-wrapper input:focus {
+            outline: 2px solid var(--accent) !important;
+            outline-offset: -2px;
+        }
+
+        /* Submit button */
+        #isso-thread .isso-postbox .isso-post-action > input {
+            background: var(--accent) !important;
+            color: var(--accent-contrast-color) !important;
+            border: none !important;
+            padding: 10px 20px !important;
+            font-family: inherit !important;
+            font-weight: bold !important;
+            cursor: pointer !important;
+            text-transform: uppercase !important;
+            border-radius: 0 !important;
+        }
+
+        #isso-thread .isso-postbox .isso-post-action > input:hover {
+            opacity: 0.8 !important;
+        }
+
+        /* Comment Author & Meta */
+        #isso-thread .isso-comment .isso-author {
+            color: var(--accent) !important;
+            font-weight: bold !important;
+        }
+
+        #isso-thread .isso-comment .isso-spacer,
+        #isso-thread .isso-comment .isso-permalink,
+        #isso-thread .isso-comment .isso-note {
+            color: color-mix(in srgb, var(--accent), transparent 50%) !important;
+        }
+
+        /* Comment Body */
+        #isso-thread .isso-comment .isso-text {
+            color: var(--color) !important;
+            line-height: 1.6 !important;
+        }
+
+        /* Notifications & Errors */
+        #isso-thread .isso-notification {
+            color: var(--accent) !important;
+            font-weight: bold;
+        }
+    </style>
+</div>
+{{ end }}
