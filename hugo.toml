@@ -38,5 +38,5 @@ theme = 're-terminal'
     url = "/logs"
 
 [params.isso]
-  url = "http://localhost:1212" # Change this to your Isso server URL
+  url = "https://logcomments.356189.xyz" # Change this to your Isso server URL
   css = true
