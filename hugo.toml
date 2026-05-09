@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://356189.xyz'
 title = 'SNJ Logs'
 languageCode = 'en-in'
 theme = 're-terminal'

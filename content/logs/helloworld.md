@@ -13,4 +13,4 @@ hideComments = false
 color = "" #color from the theme settings
 +++
 
-This is the beginning of my logging as well as the self hosting journey. Running on the latest fedora workstation 44 onmy own hardware an old Laptop I had, via cloudflare tunnels.
+This is the beginning of my logging as well as the self hosting journey. Running on the latest fedora workstation 44 on my own hardware an old Laptop I had, via cloudflare tunnels.

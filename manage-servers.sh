@@ -9,6 +9,7 @@ ISSO_SERVICE="snjlogs-isso.service"
 
 HUGO_PORT="${HUGO_PORT:-1313}"
 ISSO_PORT="${ISSO_PORT:-1212}"
+HUGO_BASE_URL="${HUGO_BASE_URL:-https://356189.xyz}"
 
 need_systemctl_user() {
   if ! command -v systemctl >/dev/null 2>&1; then
@@ -29,7 +30,7 @@ Wants=network-online.target
 [Service]
 Type=simple
 WorkingDirectory=${ROOT_DIR}
-ExecStart=/usr/bin/env hugo server --bind 0.0.0.0 --baseURL http://localhost:${HUGO_PORT} --port ${HUGO_PORT}
+ExecStart=/usr/bin/env hugo server --bind 0.0.0.0 --baseURL ${HUGO_BASE_URL} --appendPort=false --port ${HUGO_PORT}
 Restart=always
 RestartSec=5
 
@@ -78,7 +79,7 @@ start_services() {
   write_services
   systemctl --user enable --now "$HUGO_SERVICE" "$ISSO_SERVICE"
   enable_linger
-  echo "Started Hugo on http://localhost:${HUGO_PORT}"
+  echo "Started Hugo on ${HUGO_BASE_URL}"
   echo "Started Isso on http://localhost:${ISSO_PORT}"
 }
 
@@ -127,6 +128,7 @@ Commands:
 Environment:
   HUGO_PORT  Defaults to 1313
   ISSO_PORT  Defaults to 1212
+  HUGO_BASE_URL  Defaults to https://356189.xyz
 EOF
 }
 
